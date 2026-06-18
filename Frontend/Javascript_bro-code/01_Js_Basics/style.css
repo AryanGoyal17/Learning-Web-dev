@@ -1,0 +1,7 @@
+/* Handles appearance of the webpage */
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2em; /* 2em = 200% */
+    background-color: aqua;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinators in CSS</title>
+    <link rel = "stylesheet" href = "L13_style.css">
+</head>
+<body>
+    
+    <!--NOTES:-->
+    <!--
+
+      Combinators = explains the relationship between listed selectors
+
+      Different types of combinators are--
+      (a)  = descendant(1 space)
+      (b)> = child
+      (c)~ = general sibling
+      (d)+ = adjacent sibling
+
+    -->
+
+    <!--EXPLAINING THE RELATIONSHIPS!-->
+
+
+    <!-- All children are descendants but not all descendants are children
+    <div id = "container">
+        <p></p>
+        <p></p>
+        <div>
+            <p></p>
+        </div>
+        </div>
+
+    <p id = "p1"></p>  
+         <p id = "p2"></p>
+
+    In the code above all three p inside container div are descendants of container but only first 2 p are child.. not the 3rd one inside another div
+    The third p inside another div is more like a grandchild not a child...
+
+    Both p1 and p2 are general siblings of container div as .... div(container) and p1,p2 are both children of body
+    p1 is the adjacent sibling of container.. p2 is not -->
+
+
+
+    <div id = "container">
+        <p>This is p1</p>
+        <p>This is p2</p>
+        <div>
+            <p>This is p3</p>
+        </div>
+    </div>
+
+    <p>This is p4</p>
+    <p>This is p5</p>
+
+</body>
+</html>

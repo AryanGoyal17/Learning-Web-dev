@@ -1,0 +1,14 @@
+#img1{
+    float: left;
+    margin-right: 10px;
+}
+
+#img2{
+    float: right;
+    margin-left: 10px;
+}
+
+body{
+    border: solid 3px;
+    display: flow-root;
+}

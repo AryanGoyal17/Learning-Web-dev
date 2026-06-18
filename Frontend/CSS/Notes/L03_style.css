@@ -1,0 +1,22 @@
+h1{
+    font-family: sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial;
+    /* If first font family doesnt work 2nd is checked and so on (fallbacks).
+    If font family has a space, enclose the family in single or double quotes. */
+}
+
+#p1{
+    font-size: 25px;
+}
+
+#p2{
+    font-size: 1.3em;
+    /*Default font-size is 16px = 1em*/
+}
+
+#p3{
+    font-weight: bold;
+}
+
+#p4{
+    font-style: italic;
+}

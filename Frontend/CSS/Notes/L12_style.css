@@ -1,0 +1,14 @@
+body{
+    background-image: url(../../Files/Central-park_NYC.jpg);
+    background-size: cover;
+
+    /* Image doesnt scroll with scroll bar using background attachment = fixed.. property  */
+    background-attachment: fixed; 
+
+    /* If image size is small then image repeats itself... to make the image dont repeat itself use background-repeat property  */
+    background-repeat: no-repeat;
+
+    /*The property used below center aligns the image*/
+    background-position: center;
+    
+}

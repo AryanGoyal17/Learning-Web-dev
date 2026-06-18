@@ -1,0 +1,15 @@
+body{
+    background-color: slategray;
+}
+
+#p1{
+    color:rgb(15, 6, 10);
+}
+
+#p2{
+    color:#c71414
+}
+
+h2{
+    color:hsl(225, 83%, 32%);
+}

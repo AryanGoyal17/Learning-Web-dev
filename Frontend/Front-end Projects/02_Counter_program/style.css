@@ -1,0 +1,36 @@
+body{
+    background-color: beige;
+}
+
+h1{
+    text-align: center;
+}
+
+span{
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    font-size: 9em;
+    font-family: Helvetica;
+}
+
+#Button_container{
+    text-align: center;
+}
+
+.buttons{
+    color: white;
+    background-color: rgb(10, 91, 94);
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+}
+
+.buttons:hover{
+     background-color: rgb(19, 168, 173);
+}
+
+
+

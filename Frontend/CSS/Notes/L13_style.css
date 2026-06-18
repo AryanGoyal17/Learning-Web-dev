@@ -1,0 +1,22 @@
+#container{
+    border: 2px solid red;
+}
+
+/* APPLYING DIFFERENT COMBINATORS */
+
+/* #container p{
+    background-color: blue;
+} */
+
+/* #container~p{
+    background-color: blue;
+} */
+
+/* #container+p{
+    background-color: blue;
+} */
+
+#container>p{
+    background-color: red;
+}
+
