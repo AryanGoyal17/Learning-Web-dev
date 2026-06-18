@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons</title>
+</head>
+<body>
+    <!--Size of the button changes automatically with the other changes in style-->
+
+    Button-1:
+    <button>Click me</button>
+    <br><br>
+
+    Button-2(Open Youtube):
+    <a href = "https://www.youtube.com/" target = "_blank">
+    <button>Click me</button>
+    </a><br><br>
+
+    Button-3(My LinkedIn):
+
+    <a href = "https://www.linkedin.com/in/aryan-goyal-814b44378/" target = "_blank">
+    <button style = "font-size: 20px; background-color: aqua; color:brown; border-radius: 10px;">Open</button>
+    </a><br><hr>
+
+    Button-4(Executing Js code with a button):
+    <button style = "background-color: black; color:white; border-radius: 12px;" onclick = "do_the_task()">Click-Me</button>
+
+    <script>
+        function do_the_task(){
+            document.getElementById("button_js").innerHTML = "Code executed successfully!!";
+        }
+    </script>
+
+    <p id = "button_js">Executing Javascript code using a button.</p>
+
+    <hr>
+
+</body>
+</html>

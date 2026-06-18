@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserting videos in a Webpage</title>
+</head>
+<body>
+
+    <!--Some audio file formats -- .mp3, .wav-->
+    <!--Some video file formats -- .mp4, .webm, .ogg-->
+
+    <p>Video-1</p>
+    <video src = "../../Files/Video-1.mp4" controls autoplay muted loop width = "200"></video>
+
+    <br><hr>
+
+    <p>Video-2(also a hyperlink to audio webpage)</p>
+    <a href = "L04_audio.html" target = "_blank">
+    <video width = "150" controls>
+        <source src = "../../Files/Video-2.webm" type = "video/webm">
+        <source src = "../../Files/Video-2.mp4" type = "video/mp4">
+    </video>
+    </a>
+    
+</body>
+</html>

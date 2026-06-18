@@ -1,0 +1,27 @@
+div{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4em;
+}
+
+body{
+    background-color: beige;
+}
+
+#submit{
+    
+    font-family: Helvetica, sans-serif;
+    font-size: 1.05em;
+    padding: 10px 20px;
+    border-radius: 5px;
+
+    color: white;
+    background-color: rgb(51, 40, 23);
+
+    cursor: pointer;
+
+    transition: background-color 0.25s
+}
+
+#submit:hover{
+    background-color: rgb(87, 87, 78);
+}

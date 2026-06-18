@@ -1,0 +1,30 @@
+/*How to put 2 boxes side-by-side using CSS*/
+
+
+* {
+    box-sizing: border-box;
+} /*This applies to all the elements.. Earlier: total width = width + border + padding
+                                       Now: total width = width = 50%. */
+
+.container{
+    background-color: grey;
+    height: 100vh;
+}
+.box1{
+    border: 2px solid;
+    /* auto is default for both height and width */
+    background-color: white;
+    height: auto;
+    padding: 20px;
+    width: 50%;
+    float: left;
+
+    /* max-width: 25%; */
+    /* min-width: 75%; */
+
+    /*IMPORTANT: To use min-height and max-height a reference height like here in .container is to be set ... otherwise no change on using 
+                 min/max height..!!*/
+    min-height: 50%;
+    /* max-height: 50%; */
+}
+

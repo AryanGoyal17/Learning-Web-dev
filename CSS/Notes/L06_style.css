@@ -1,0 +1,35 @@
+body{
+    margin: 0px;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    border: 3px solid;
+    box-shadow: 3px 3px 5px;
+    font-size: 4em;
+    
+    /* All boxes come at center using margin: auto; */
+    margin: auto; 
+}
+
+#box1{
+
+    background-color: red;
+
+    /* margin-left: 50px; */
+    /* Similarly margin-right, margin-top, margin-bottom can be applied */
+
+    /* margin: 60px; Margin set to all sides at once.. */
+
+    /* margin-left: auto; Maximum space possible added to left of border */
+}
+
+#box2{
+    background-color: blue;
+    
+}
+
+#box3{
+    background-color: green;
+}

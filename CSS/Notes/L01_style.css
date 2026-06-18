@@ -1,0 +1,33 @@
+body{
+    background-color: black;
+}
+
+h1{
+    color: white;
+}
+
+/*Done using ID's*/
+/* #p1{
+    color:red;
+}
+
+#p2{
+    color:yellow;
+}
+
+#p3{
+    color:green;
+}
+
+#p4{
+    color:rgb(101, 76, 76);
+} */
+
+/*Done using Classes*/
+.odd{
+    color:blue;
+}
+
+.even{
+    color:red;
+}

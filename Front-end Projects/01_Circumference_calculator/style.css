@@ -1,0 +1,16 @@
+body{
+    background-color: beige;
+}
+
+h1{
+    color:rgb(9, 53, 38);
+}
+
+label{
+    color:rgb(73, 23, 23);
+    font-size: 1.3em;
+}
+
+p{
+    font-size: 1.3em;
+}

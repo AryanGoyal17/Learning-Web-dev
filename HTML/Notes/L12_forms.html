@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    
+    <!--NOTES-->
+
+    <!--Action attribute in form tag = File to which the form is sent after submission... it is a back-end language file.-->
+    <!--Method attribute in form tag = "GET"(For insensitive information), Method = "POST"(For sensitive information).-->
+    <!--Input tag is self-closing, default type is text-box..(text box is formed if type not specified)-->
+    <!--If we are sending a large amount of data, change encryption type in form tag by using enctype attribute..
+        enctype = "multipart/form-data"... It breaks data into smaller parts on sending and on receiving reassembles it!!-->
+
+    <!--Different attributes of Input-->
+    <!--1_minlength, 2_maxlength(for text boxes)-->
+    <!--3_required(cant submit without giving input)-->
+    <!--4_placeholder-->
+    <!--5_type-->
+    <!--6_id
+    (a)On clicking the label , cursor comes inside text box.(use id attribute in input tag and for attribute in label tag)
+    (b)On using screen-readers(for blind people) ... for attribute in label tag is required-->
+    <!--7_pattern-->
+    <!--8_min and max(for number type input boxes), value(to )-->
+    <!--9_value
+    (a)For number-box: Sets the default value of the number-box.
+    (b)Others(except number-box like in radio button, drop-down etc.): Data that gets sent to the server when radio button/option etc. is selected.-->
+    <!--10_name(To assign a set of radio buttons to same group)-->
+    <!--EXTRA(11): rows,cols (to change dimension of text-area(comment box etc..))-->
+    <!--12_accept(if accept attribute not added all files are acceptable)-->
+
+    
+
+    <!--Different type of Input-->
+    <!--1_text-->
+    <!--2_reset-->  
+    <!--3_submit--> 
+    <!--4_password--> 
+    <!--5_email-->
+    <!--6_tel(for phone number)-->
+    <!--7_date-->
+    <!--8_number-->
+    <!--9_radio-->
+    <!--EXTRA(10): drop-down menu (using select and option tags)-->
+    <!--11_checkbox-->
+    <!--EXTRA(12): text-area for commenting(using comment tag)-->
+    <!--13_file-->
+
+    <h2 align = "center">Basic form Structure for a E-Commerce Website</h2><hr><br>
+
+    <form action = "index.php" method = "POST" enctype="multipart/form-data">
+
+       <label for = "username">Username:</label>
+       <input type = "text" id = "username" minlength="5" maxlength = "15" required><br><br>
+
+       <label for = "password">Password:</label>
+       <input type = "password" id = "password" required><br><br>
+
+       <label for = "email">E-Mail:</label>
+       <input type = "email" id = "email" placeholder = "abc@gmail.com" required><br><br>
+
+       <label for = "Phone_number">Phone_number:</label>
+       <input type = "tel" id = "Phone_number" placeholder = "987-654-3210" pattern = "[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength = "12" minlength = "12" required><br><br>
+
+       <label for = "bday">Birth-Date:</label>
+       <input type = "date" id = "bday" required><br><br>
+
+       <label for = "quantity">Quantity:</label>
+       <input type = "number" id = "quantity" min = "0" max = "100" value="1" required><br><br>
+
+       <label for = "title">Title:</label>
+       <label for = "Mr.">Mr.</label>
+       <input type = "radio" id = "Mr." name = "title" required>
+       <label for = "Ms.">Ms.</label>
+       <input type = "radio" id = "Ms." name = "title" required>
+       <label for = "Dr.">Dr.</label>
+       <input type = "radio" id = "Dr." name = "title" required><br><br>
+
+       <label for = "payments">Payment Method-</label>
+       <select id = "payments">
+        <option value = "Visa">Visa</option>
+        <option value = "MasterCard">MasterCard</option>
+        <option value = "GiftCard">GiftCard</option>
+       </select><br><br>
+
+       <label for = "subscribe">Subscribed?</label>
+       <input type = "checkbox" id = "subscribe" required><br><br>
+
+       <label for = "comment">Comment-</label>
+       <textarea id = "comment" rows = "2" cols = "25"></textarea><br><br>
+
+       <!-- <label for = "file">File-</label>
+       <input type = "file" id = "file" accept = "image/png, image/jpeg, application/pdf"><br> -->
+
+       <label for = "file">File-</label>
+       <input type = "file" id = "file" accept = ".png, .jpg, .pdf, .xlsx, .ppt"><br><br> <!--if accept not used, all file types accepted-->
+       
+       <input type = "reset"><br><br>
+       <input type = "submit"><br><hr>
+
+    </form>
+</body>
+</html>

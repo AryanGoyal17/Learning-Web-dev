@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+}
+
+#box1{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+
+    /* position: relative;
+    right: -160px; Similarly-- top, bottom and left can be used */
+
+    /* position: fixed;
+    left: 1170px; Similarly-- top, bottom and left can be used */
+
+    /* position: sticky;
+    top: 20px; Similarly-- top, bottom and left can be used  */
+
+    /* position: static;
+    top: 150px; Box remains at the same position no matter what we put in top, bottom, left, right*/
+    
+    position: sticky;
+    top: 20px; 
+}
+
+#box2{
+    width: 75px;
+    height: 75px;
+    background-color: blue;
+
+    /* Positioning happens relative to the bigger box!! */
+    position: absolute; 
+
+    left: 60px;
+    top: 50px;
+}
