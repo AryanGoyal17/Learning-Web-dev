@@ -20,6 +20,11 @@ console.log(state) //undefined = output
 // null => standalone value(temperature example...) -- intentionally empty(assigned as empty)
 // undefined => declaration without assignment
 // symbol => creating a unique value
+
+let id1 = Symbol('123')
+let id2 = Symbol('123')
+
+console.log(id1 == id2)//false
 // object -- stores multiple dtypes in key-value pairs
 
 console.log(typeof undefined); // undefined
@@ -33,3 +38,12 @@ console.log(typeof null); // object - bug in js, but not fixed as it would break
 // Data types(8)
 // using typeof
 // type of undefined = undefined and type of null = object
+
+//Extras---
+
+//Data-types are of 2 types -- primitive and non-primitive(based on how the data is stored and accessed from memory)
+
+//primitive-- call by value(all dtypes except object mentioned above are primitive)
+//non-primitive-- call by reference(arrays, objects, function)
+
+//typeof(non-primitive dtypes) -- object, for fn its called an object function
